@@ -8,7 +8,14 @@ namespace MVC_Application.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            StudentModel student = new StudentModel();
+            student.ID = 1;
+            student.FirstName = "JP";
+            student.MiddleName = "Castillo";
+            student.LastName = "Soliven";
+            student.Address = "Pasig City";
+
+            return View(student);
         }
 
         public IActionResult Privacy()
