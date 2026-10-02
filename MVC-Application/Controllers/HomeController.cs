@@ -18,9 +18,23 @@ namespace MVC_Application.Controllers
             return View(student);
         }
 
-        public IActionResult Privacy()
+            
+            public IActionResult Privacy()
         {
             return View();
+        }
+        public IActionResult Xigrid()
+        {
+            Xigrid xigrid = new Xigrid();
+         
+            xigrid.FirstName = "Xigrid Micah";
+            xigrid.MiddleName = "Gianan";
+            xigrid.LastName = "Caharian";
+            xigrid.Address = "Deparo, Caloocan City";
+            xigrid.Age = "20";
+            xigrid.School = "Polytechnic University of the Philippines";
+
+            return View(xigrid);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
