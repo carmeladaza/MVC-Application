@@ -8,18 +8,7 @@ namespace MVC_Application.Controllers
     {
         public IActionResult Index()
         {
-<<<<<<< Updated upstream
             return View();
-=======
-            StudentModel student = new StudentModel();
-            student.ID = 1;
-            student.FirstName = "---";
-            student.MiddleName = "---";
-            student.LastName = "---";
-            student.Address = "---";
-
-            return View(student);
->>>>>>> Stashed changes
         }
 
         public IActionResult Privacy()
