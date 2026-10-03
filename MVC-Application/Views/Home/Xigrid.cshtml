@@ -1,10 +1,22 @@
-﻿    <div class="text-center">
+﻿
+<body class="m-0 p-0" style="background-color: #707a7e;">
+<div class="container-fluid px-0">  
+    <div class="card bg-dark text-white">
+    <img src="~/images/header.jpg" class="w-100" alt="love of my life">
+    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+    <h1 class="card-title text-center display-1 fw-bold">Welcome to my page!</h1>
+  </div>            
+    </div>
+</div>
+<br />
+<div class="text-center">
         <h1 class="display-4">Hi, I'm @Model.FullName</h1>
     <div>
-        <label>
-            2nd year BS Computer Science student from @Model.School  
+        <br />
+        <label class="fs-5 d-block">
+            A 2nd year BS Computer Science student from @Model.School  
         </label>
-
+        <br />
         <h3>Address: </h3>
         <label>@Model.Address</label>
     </div>
@@ -25,3 +37,4 @@
     <a href="https://github.com/ximyka" target="_blank">Github</a>
 
 </div>
+</body>
