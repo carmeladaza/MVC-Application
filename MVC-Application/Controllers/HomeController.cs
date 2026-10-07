@@ -11,9 +11,10 @@ namespace MVC_Application.Controllers
             StudentModel student = new StudentModel();
             student.ID = 1;
             student.FirstName = "JP";
-            student.MiddleName = "Castillo";
+            student.MiddleName = "C";
             student.LastName = "Soliven";
-            student.Address = "Pasig City";
+            student.Address = " Pasig City";
+
 
             return View(student);
         }
@@ -23,6 +24,20 @@ namespace MVC_Application.Controllers
             return View();
         }
 
+        public IActionResult James()
+        {
+            James james = new James();
+            james.ID = 1;
+            james.FirstName = "James Paul";
+            james.MiddleName = "Castillo";
+            james.LastName = "Soliven";
+            james.Address = "Pasig City";
+            james.Age = "19";
+            james.School = "Polytechnic University of the Philippines";
+
+            return View(james);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -30,3 +45,4 @@ namespace MVC_Application.Controllers
         }
     }
 }
+
