@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model MVC_Application.Models.StudentModel;
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome Kupal</h1>
+    <div>
+        <h3>ID: </h3>
+        <label>@Model.ID</label>
+    </div>
+    <div>
+        <h3>Full Name:</h3>
+        <label>@Model.FullName</label>
+    </div>
+    <div>
+        <h3>Address: </h3>
+        <label>@Model.Address</label>
+    </div>
 </div>
