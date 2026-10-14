@@ -1,18 +1,81 @@
 ﻿@model MVC_Application.Models.StudentModel;
 
-<div class="text-center">
-    <h1 class="display-4">Welcome Kupal</h1>
-    <div>
-        <h3>ID: </h3>
-        <label>@Model.ID</label>
+<link rel="stylesheet" href="~/css/carmela.css" asp-append-version="true"/>
+
+<div class="portfolio">
+    <p class="portfolio-tag">PORTFOLIO</p>
+    
+    <div class="profile-image">
+        <img src="~/images/carmela.png" style="width: 500px !important; height: auto !important; margin: 0px;" alt="Profile Image"/>
     </div>
-    <div>
-        <h3>Full Name:</h3>
-        <label>@Model.FullName</label>
+
+    <div class="text-container">
+        <p class="name">@Model.FullName</p>
+        <p class="subtitle">Student Leader / Volunteer • Aspiring Software Developer</p>
+        <p class="bio">
+            2nd Year Computer Science student at Polytechnic University of the Philippines.
+            Passionate about software development, community service, and building meaningful tech projects.
+        </p>
     </div>
-    <div>
-        <h3>Address: </h3>
-        <label>@Model.Address</label>
-    </div>
-    <a href="https://web.facebook.com/melaydaza">Facebook</a>
 </div>
+<div class="leadership">
+    <div class="content container">
+        <h2>PUP Leadership and Volunteer Experience</h2>
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ Class Secretary</p>
+            <p class="experience-date">SCHOOL YEARS: 2025-2026, 2026-2027 (PRESENT)</p>
+            <p class="experience-description">
+                Responsible for maintaining class records, organizing meetings, and facilitating communication between students and faculty.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ Object-Oriented Programming - Class Beadle</p>
+            <p class="experience-date">SCHOOL YEAR:2026-2027 (PRESENT)</p>
+            <p class="experience-description">
+                Communicated and coordinate with the professor and fellow classmates to ensure smooth class operations, including modality updates, attendance tracking, and other tasks related to the course, while also assisting in maintaining a positive and productive learning environment.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ For Girls Who Build - Organization Member and Volunteer</p>
+            <p class="experience-date">October 2026</p>
+            <p class="experience-description">
+                Joined the new organization to promote and support women in technology, planning to participate in workshops, study jams, and other activities that encourage and empower women in the field of technology and innovation.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ Administrative Department - Secretariat Officer</p>
+            <p class="experience-date">CISCO October 2026</p>
+            <p class="experience-description">
+                Explored the administrative side of the organization specifically built for Computer Science students, planning to manage and coordinate administrative tasks, such as documentation, scheduling, and communication, to support the organization's operations and initiatives.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ Mentorship Committee - Co-Head</p>
+            <p class="experience-date">ANGAT Iskolar PUP - September-October 2026</p>
+            <p class="experience-description">
+                Guided and supported probationary members of the organization, helping them practice leadership skills, integrate into the organization and community, and develop their potential as future leaders.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ Tours and Activities Management Committee - Member</p>
+            <p class="experience-date">CCISalubong Organizing Committee - September-October 2026</p>
+            <p class="experience-description">
+                Facilitated and  organized activities, specifically the Freshmen Campus Tour, to educate and orient new CCIS and Non-CCIS students about the campus, its facilities, and the various student organizations available to them.
+            </p>
+        </div>
+
+        <div class="experience-content">
+            <p style="font-size: 25px; font-weight: 600;">♡ ANGAT Iskolar PUP - Committee on Gender Equality and Social Harmony Member</p>
+            <p class="experience-date">2025-PRESENT</p>
+            <p class="experience-description">
+                Advocated for gender equality and social harmony within the organization, promoting awareness and understanding of these issues among members and the wider community alongside volunteering to various outreach programs.
+            </p>
+        </div>
+    </div>
+</div>
+
