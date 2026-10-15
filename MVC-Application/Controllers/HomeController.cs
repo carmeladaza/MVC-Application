@@ -33,6 +33,7 @@ namespace MVC_Application.Controllers
             xigrid.Address = "Deparo, Caloocan City";
             xigrid.Age = "20";
             xigrid.School = "Polytechnic University of the Philippines";
+            xigrid.Music = "I love music";
 
             return View(xigrid);
         }

@@ -16,5 +16,6 @@
         public string Address { get; set; }
         public string School { get; set; }
         public string Age { get; set; }
+        public string Music { get; set; }
     }
 }

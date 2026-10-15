@@ -1,8 +1,17 @@
-﻿
+﻿<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Poppins';
+    }
+</style>
+
 <body class="m-0 p-0" style="background-color: #707a7e;">
 <div class="container-fluid px-0">  
     <div class="card bg-dark text-white">
-    <img src="~/images/header.jpg" class="w-100" alt="love of my life">
+            <img src="~/images/header.jpg" class="w-100" style="height: 50vh;" alt="love of my life">
     <div class="card-img-overlay d-flex align-items-center justify-content-center">
     <h1 class="card-title text-center display-1 fw-bold">Welcome to my page!</h1>
   </div>            
@@ -10,32 +19,58 @@
 </div>
 <br />
 <div class="text-center">
-        <h1 class="display-4">Hi, I'm @Model.FullName</h1>
+        <h1 class="display-4" style="font-weight: 300;">Hi, I'm @Model.FullName</h1>
     <div>
         <br />
-        <label class="fs-5 d-block">
+            <label class="fs-5 d-block" style="font-weight:450;">
             A 2nd year BS Computer Science student from @Model.School  
         </label>
         <br />
          <img src="~/images/ela.png" alt="cute na bata pakagat pisngi" width="200" height="200">
-        <h3>Contact Information</h3>
-            <a href="https://www.facebook.com/carpeda" target="_blank">
-                <img src="~/images/fb.png" alt="Facebook" width="200" height="200">
-            </a>
-            <a href="https://www.instagram.com/ximigica" target="_blank">
-                <img src="~/images/ig.png" alt="Instagram" width="175" height="175">
-            </a>
-            <a href="https://www.linkedin.com/in/xigrid-caharian-b27714329/" target="_blank">
-                <img src="~/images/linkedin.png" alt="LinkedIn" width="200" height="200">
-            </a>
+
+         <section class="container-fluid">
+            <div class="row text-center">
+
+             <div class="col-md-4">
+                    <h2>Contact Information</h2>
+                    <a href="https://www.facebook.com/carpeda" target="_blank">
+                        <img src="~/images/fb.png" alt="Facebook" width="100" height="100">
+                    </a>
+                    <a href="https://www.instagram.com/ximigica" target="_blank">
+                        <img src="~/images/ig.png" alt="Instagram" width="85" height="85">
+                    </a>
+                    <a href="https://www.linkedin.com/in/xigrid-caharian-b27714329/" target="_blank">
+                        <img src="~/images/linkedin.png" alt="LinkedIn" width="100" height="100">
+                    </a>
+             </div>
+
+             <div class="col-md-4">
+                 <h2>Personal Information</h2>
+                        <div class="text-start" style="padding-start: 80px; padding-left: 80px;">
+                
+                            <label class="fs-5">Age: @Model.Age</label><br />
+                            <label class ="fs-5">Address: @Model.Address </label><br />
+                            <labbel class="fs-5">Fact: @Model.Music</labbel><br />
+                           
+                        </div>
+                    </div>
+
+             
+                <div class="col-md-4">
+                    <h2>Repository of this webpage</h2>
+                        <a href="https://github.com/carmeladaza/MVC-Application" target="_blank">
+                            <img src="~/images/github.png" alt="GitHub" width="100" height="100">
+                        </a>
+
+                        
+                </div>
+           </div>
+         </section>
+        
     </div>
    
     
 </div>
 
-<div class="text-start">
-    <h3>Age: </h3>
-    <label>@Model.Age</label>
 
-</div>
 </body>
